@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnmulCare: Layanan Aspirasi Kampus</title>
+</head>
+<body>
+    <header>
+        <h1>Sistem Pengaduan Universitas Mulawarman</h1>
+        <p>Media pengaduan bagi seluruh keluarga besar Universitas Mulawarman</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#pengaduan">Buat Pengaduan</a></li>
+            <li><a href="#status">Cek Status</a></li>
+            <li><a href="#about">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Sistem Pengaduan UNMUL</h2>
+            <p>Layanan pengaduan untuk staff, dosen, dan mahasiswa Universitas Mulawarman terkait:</p>
+            <ul>
+                <li>Fasilitas Kampus</li>
+                <li>Masalah Akademik</li>
+                <li>Lingkungan Kampus</li>
+            </ul>
+        </section>
+
+        <section id="pengaduan">
+            <h2>Buat Pengaduan Baru</h2>
+            <form>
+                <fieldset>
+                    <legend>Form Pengaduan</legend>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    
+                    <label for="role">Status:</label>
+                    <select id="role" name="role" required>
+                        <option value="">Pilih status Anda</option>
+                        <option value="staff">Staff</option>
+                        <option value="dosen">Dosen</option>
+                        <option value="mahasiswa">Mahasiswa</option>
+                    </select>
+                    
+                    <label for="kategori">Kategori Pengaduan:</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">Pilih kategori</option>
+                        <option value="fasilitas">Fasilitas Kampus</option>
+                        <option value="akademik">Akademik</option>
+                        <option value="lingkungan">Lingkungan Kampus</option>
+                    </select>
+                    
+                    <label for="judul">Judul Pengaduan:</label>
+                    <input type="text" id="judul" name="judul" required>
+                    
+                    <label for="deskripsi">Deskripsi Pengaduan:</label>
+                    <textarea id="deskripsi" name="deskripsi" rows="5" required></textarea>
+                    
+                    <label for="lampiran">Lampiran bukti (opsional):</label>
+                    <input type="file" id="lampiran" name="lampiran">
+                    
+                    <button type="submit">Kirim Pengaduan</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="status">
+            <h2>Cek Status Pengaduan</h2>
+            <form>
+                <label for="kode-pengaduan">Masukkan ID Pengaduan:</label>
+                <input type="text" id="kode-pengaduan" name="kode-pengaduan" required>
+                <button type="submit">Cek Status</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>Tentang Sistem Pengaduan UNMUL</h2>
+            <p>Web ini bertujuan untuk memeluk semua keluarga Univeristas Mulawarman dalam menyampaikan pengaduan terkait fasilitas, akademik, dan lingkungan kampus.</p>
+            <p>Setiap pengaduan akan ditinjau oleh admin untuk disampaikan kepada pihak yang berwenang sesuai dengan tingkat urgensi masalah.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Referensi Desain:</p>
+        <ul>
+            <li><a href="https://www.lapor.go.id/" target="_blank">LAPOR! - Layanan Aspirasi dan Pengaduan Online Rakyat</a></li>
+            <li><a href="https://help.github.com/" target="_blank">GitHub Help</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
