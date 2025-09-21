@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnmulCare: Layanan Aspirasi Kampus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Website Pengaduan Universitas Mulawarman</h1>
+            <p>Media pengaduan bagi seluruh keluarga besar Universitas Mulawarman</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="#pengaduan" class="nav-link">Buat Pengaduan</a></li>
+            <li class="nav-item"><a href="#status" class="nav-link">Cek Status</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <main class="main container">
+        <section id="home" class="section">
+            <h2>Selamat Datang di UnmulCare : Sistem Pengaduan Unmul</h2>
+            <p>Layanan pengaduan untuk staff, dosen, dan mahasiswa Universitas Mulawarman terkait:</p>
+            <ul>
+                <li>Fasilitas Kampus</li>
+                <li>Masalah Akademik</li>
+                <li>Lingkungan Kampus</li>
+            </ul>
+        </section>
+
+        <section id="pengaduan" class="section">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Buat Pengaduan</h2>
+                </div>
+                <form>
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Formulir Pengaduan</legend>
+                        <div class="form-group">
+                            <label for="nama" class="form-label">Nama:</label>
+                            <input type="text" id="nama" name="nama" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="role" class="form-label">Status:</label>
+                            <select id="role" name="role" class="form-select" required>
+                                <option value="">Pilih status Anda</option>
+                                <option value="staff">Staff</option>
+                                <option value="dosen">Dosen</option>
+                                <option value="mahasiswa">Mahasiswa</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kategori" class="form-label">Kategori Pengaduan:</label>
+                            <select id="kategori" name="kategori" class="form-select" required>
+                                <option value="">Pilih kategori</option>
+                                <option value="fasilitas">Fasilitas Kampus</option>
+                                <option value="akademik">Akademik</option>
+                                <option value="lingkungan">Lingkungan Kampus</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="judul" class="form-label">Judul Pengaduan:</label>
+                            <input type="text" id="judul" name="judul" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="deskripsi" class="form-label">Deskripsi Pengaduan:</label>
+                            <textarea id="deskripsi" name="deskripsi" rows="5" class="form-textarea" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lampiran" class="form-label">Lampiran bukti (opsional):</label>
+                            <input type="file" id="lampiran" name="lampiran" class="form-input">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Kirim Pengaduan</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section id="status" class="section">
+            <h2>Cek Status Pengaduan</h2>
+            <form>
+                <div class="form-group">
+                    <label for="kode-pengaduan" class="form-label">Masukkan ID Pengaduan:</label>
+                    <input type="text" id="kode-pengaduan" name="kode-pengaduan" class="form-input" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Cek Status</button>
+            </form>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Tentang UnmulCare</h2>
+            <p>Web ini bertujuan untuk memeluk seluruh keluarga Univeristas Mulawarman dalam menyampaikan pengaduan terkait fasilitas, akademik, dan lingkungan kampus.</p>
+            <p>Setiap pengaduan akan ditinjau oleh admin untuk disampaikan kepada pihak yang berwenang sesuai dengan tingkat urgensi masalah.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Referensi Desain:</p>
+            <ul class="footer-list">
+                <li class="footer-item"><a href="https://www.lapor.go.id/" target="_blank" class="footer-link">LAPOR! - Layanan Aspirasi dan Pengaduan Online Rakyat</a></li>
+                <li class="footer-item"><a href="https://help.github.com/" target="_blank" class="footer-link">GitHub Help</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
